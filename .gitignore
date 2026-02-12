@@ -1,8 +1,0 @@
-/vendor/
-/node_modules/
-.env
-.DS_Store
-Thumbs.db
-*.log
-*.tmp
-# config.php # Uncomment this line if you want to keep your database credentials private
