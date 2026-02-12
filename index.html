@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Puzzle</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="crypto.css">
+</head>
+<style>
+    #question-container {
+    position: relative;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 90%;
+    margin-left: 3%;
+    
+}
+</style>
+
+<body>
+    
+    <div id="login-container">
+        <img src="logo.jpeg" width="100" style="border-radius: 10px;"></style>
+        <h2>Login</h2>
+        <div id="user">
+            <label><i class="fas fa-user"></i> USERNAME</label><br>
+<input type="text" id="username" placeholder="Enter username" required>
+        </div>
+        <div id="pass"><i class="fas fa-lock"></i> PASSWORD</label><br>
+<input type="password" id="password" placeholder="Enter password" required><br>
+        </div>
+<button onclick="login()">Login</button>
+    </div>
+    <div id="quiz-container" style="display: none;">
+        
+        <img src="logo.jpeg" width="100" style="border-radius: 10px;"></style>
+        <h2>Crypto Puzzle</h2>
+        <div id="timer"><span id="time"></span></div>
+        <p id="progress">Question: 0 / 0</p>
+
+        
+        <div id="difficulty-label"></div>
+        <div id="question-container">
+            <div id="question"></div>
+        </div>
+        <input type="text" id="answer" placeholder="Enter your answer"><br>
+    
+        
+        <button onclick="nextQuestion()">Next</button>
+        <button onclick="submitAnswers()">Submit</button>
+        <button onclick="logout()">Logout</button>
+
+        <div id="score"></div>
+<!-- Popup Modal -->
+<div id="popup" style="display: none; position: fixed; bottom: -100px; right: 20px; background-color: #fff; padding: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.3); border-radius: 8px; z-index: 1000; transition: bottom 0.5s ease-out, opacity 0.5s;">
+    <span id="popup-emoji" style="font-size: 24px; margin-right: 5px;">💬</span>
+    <span id="popup-message" style="color: #333; font-weight: bold;"></span>
+</div>
+
+        </div>
+        
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
